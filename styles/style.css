@@ -7,13 +7,14 @@
 }
 
 .header__links-list {
-    display: inline;
+    list-style: circle;
 }
 
 .header__links-list-item {
 }
 
 .header__links-list-item_no-bullit {
+    list-style: none;
 }
 
 .header__link {

@@ -36,8 +36,7 @@
 
 .header__logo {
   display: block;
-  position: absolute;
-  right: 1335px;
+  margin-left: -182px;
 }
 
 .header__logo-image {

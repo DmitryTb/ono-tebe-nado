@@ -10,9 +10,6 @@
   margin: 94px 51px 117px;
 }
 
-.header__menu {
-}
-
 .header__links-list {
   list-style: circle;
   display: flex;
@@ -21,17 +18,16 @@
   column-gap: 32px;
 }
 
-.header__links-list-item {
-}
-
 .header__links-list-item_no-bullit {
   list-style: none;
 }
 
 .header__link {
+  text-decoration: underline;
 }
 
 .header__link_active {
+  text-decoration: none;
 }
 
 .header__logo {
@@ -44,12 +40,7 @@
 }
 
 .address {
-}
-
-.header__address {
-}
-
-.main {
+  font-size: 20px;
 }
 
 /*Секция 1 - Оно тебе надо*/
@@ -125,6 +116,12 @@
   border: 2px solid white;
 }
 
+.button__no_dec {
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+}
+
 /*Секция 2 - Лоты*/
 
 .lots {
@@ -147,11 +144,16 @@
   display: flex;
   column-gap: 25px;
   color: white;
+  flex-grow: 1;
+  flex-wrap: wrap;
+
 }
 
 .lots__card-list-item {
-  width: 334px;
-  height: 563px;  
+  max-width: 334px;
+  min-height: 563px;
+  flex-grow: 1;
+  flex-basis: 334px;
 }
 
 .card-link {
@@ -205,10 +207,10 @@
 }
 
 .card__text {
- font-size: 20px;
- width: 76%;
- align-items: end;
- margin-bottom: 48px;
+  font-size: 20px;
+  width: 76%;
+  align-items: end;
+  margin-bottom: 48px;
 }
 
 .lots__look-more-link {
@@ -218,5 +220,90 @@
   align-items: end;
 }
 
+/*Секция 3 - Об аукционе*/
+
+.about {
+  display: grid;
+  grid-template-columns: 334px 766px;
+  height: 595px;
+  margin-top: 146px;
+}
+
+.about__column {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 50px 0px;
+}
+
+.about__logo {
+  height: 240px;
+  width: 240px;
+  background-color: black;
+  display: flex;
+  border-radius: 120px;
+  align-self: center;
+  margin-top: 35px;
+  margin-left: 47px;
+}
+
+.about__logo-image {
+  height: 114px;
+  align-self: center;
+}
+
+.about__title {
+  font-size: 40px;
+  text-transform: uppercase;
+  margin-top: 136px;
+}
+
+.about__text {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: end;
+  row-gap: 25px;
+  font-size: 20px;
+}
+
 .footer {
+  margin: 180px auto 88px;
+  height: 98px;
+  width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  margin: ;
+}
+
+.footer__menu {
+  font-size: 20px;
+  display: flex;
+  align-self: center;
+}
+
+.footer__menu-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__menu-list-item {
+  align-self: center;
+}
+
+.footer__menu-link_active {
+  text-decoration: none;
+}
+
+.footer__social-list {
+  display: flex;
+  column-gap: 30px;
+}
+
+.footer__social-list-item {
+  list-style: none;
+}
+
+.footer__social-icon {
+  height: 48px;
 }
